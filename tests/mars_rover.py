@@ -1,23 +1,14 @@
 """ Mars Rover problem
 	py version: Python 2.7.15
+
+	this is where I started coding just to solve the problem and see that all works fine
+	just for test purposes
 """
 
 import sys
 
 
-class Rover:
-	""" This class represents a Rover
-		atributes:
-			-> x, y coordinates
-			-> direction (N, W, E, S)
-			-> it's start point and direction
-
-		actions:
-			-> move forward
-			-> rotate
-			-> returns to start point (in case any error occurs while walking)
-	"""
-	
+class Rover:	
 	def __init__(self, x, y, direction):
 		self.x = x
 		self.y = y
@@ -46,16 +37,7 @@ class Rover:
 	def __str__(self):
 		return "%d %d %s"%(self.x, self.y, self.direction)
 
-class Plateau:
-	""" This class represents the rectangle where rovers are landed
-		atributes:
-			-> Plateau size
-			-> occupied array storing occupied coordinates (if any)
-
-		actions:
-			-> start rover walking
-	"""
-	
+class Plateau:	
 	def __init__(self, width, height):
 		self.width = width
 		self.height = height

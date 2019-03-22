@@ -1,5 +1,8 @@
 # MarsRover_Python
 
-Py Version: Python 2.7
+Py Version I've used: Python 2.7.15
 
-Usage: python mars_rover.py args.txt
+Usage:
+
+ - Console input mode: python main.py -c
+ - .txt file input mode: python main.py <.txt>
