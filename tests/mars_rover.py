@@ -5,19 +5,7 @@
 import sys
 
 
-class Rover:
-    """ This class represents a Rover
-        atributes:
-            -> x, y coordinates
-            -> direction (N, W, E, S)
-            -> it's start point and direction
-
-        actions:
-            -> move forward
-            -> rotate
-            -> returns to start point (in case any error occurs while walking)
-    """
-    
+class Rover:    
     def __init__(self, x, y, direction):
         self.x = x
         self.y = y
@@ -47,15 +35,6 @@ class Rover:
         return "%d %d %s"%(self.x, self.y, self.direction)
 
 class Plateau:
-    """ This class represents the rectangle where rovers are landed
-        atributes:
-            -> Plateau size
-            -> occupied array storing occupied coordinates (if any)
-
-        actions:
-            -> start rover walking
-    """
-    
     def __init__(self, width, height):
         self.width = width
         self.height = height
